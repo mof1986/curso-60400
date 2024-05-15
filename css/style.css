@@ -1,4 +1,4 @@
-/*reset del CSS*/
+/* Reset del CSS */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
 
 /* Estilos para el encabezado */
 header {
-    background-color: #e0a8b5; 
+    background-color: #d1e0e0; 
     color: #303030;
     display: flex;
     flex-direction: column; 
@@ -66,12 +66,13 @@ nav ul li a {
     font-weight: normal;
 }
 
-.oculto{
-    display:none;
+.oculto {
+    display: none;
 }
+
 /* Estilo para el boton flotante de whatsapp "tunning" */
-.btn-wsp{
-    position:fixed;
+.btn-wsp {
+    position: fixed;
     width: 4rem;
     height: 4rem;
     line-height: 3rem;
@@ -94,10 +95,10 @@ nav ul li a:hover {
 }
 
 body > header > nav:nth-child(1) > div > h1 > span {
-    color:rgb(76, 76, 76);
+    color: rgb(76, 76, 76);
     font-weight: 900;
-    text-transform:uppercase ;
-    font-size:1.5rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .selectioned-link {
@@ -116,15 +117,15 @@ h1 {
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display:block;
-    color:#6b1206;
+    display: block;
+    color: #6b1206;
     size: 20px;
     text-align: center;
 }
 
 h3 {
-    color:#573139;
-    size:1rem;
+    color: #573139;
+    size: 1rem;
 }
 
 /* Estilos para la sección de imágenes promocionales */
@@ -139,10 +140,10 @@ h3 {
     max-width: 30%;
     height: auto; 
     margin-left: 700px; 
-    margin-right:25px;
+    margin-right: 25px;
 }
 
-/*personalizo el carrusel de bt*/
+/* Personalizo el carrusel de Bootstrap */
 .carousel-item img {
     width: 25%; 
     height: auto; 
@@ -165,22 +166,17 @@ h3 {
     margin-right: 20px; 
 }
 
-/* Estilo para imagenes de Nuestros clientes, aca deberia usar luego grid con mas detalles */
-
+/* Estilo para imágenes de Nuestros clientes */
 .grid-container-clients {
-    display:flex;
+    display: flex;
     padding: 20px;
     height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 25px;
-
     row-gap: 25px;
     column-gap: 75px;
-
-    gap: 25px 75px;
 }
 
 .clients {
@@ -194,7 +190,6 @@ h3 {
     background-position: center;
 }
 
-/*Manipulo las imagenes respecto a la caja contenedora*/
 .clients img {
     width: 100%; 
     height: 100%; 
@@ -203,7 +198,7 @@ h3 {
     margin: auto; 
 }
 
-/*Estilos para imagenes de Nosotros*/
+/* Estilos para imágenes de Nosotros */
 .img-nosotros {
     width: 200rem; 
     height: 200px; 
@@ -225,7 +220,7 @@ h3 {
     gap: 20px;
 }
 
-/*Estilos para la seccion de productos. Aca deberia usar luego grid con mas detalles*/
+/* Estilos para la sección de productos */
 .product {
     border: 1px solid #ccc;
     padding: 20px;
@@ -308,7 +303,7 @@ footer {
     margin-right: 5px;
 }
 
-/* Estilos para la parte de formularios (contacto) usando grid*/
+/* Estilos para la parte de formularios (contacto) usando grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -320,7 +315,7 @@ footer {
     padding: 2px;
     background-color: #f9f9f9;
     display: grid;
-    grid-template-rows: repeat(4, 1) 1fr;
+    grid-template-rows: repeat(4, 1fr);
     gap: 1px;
 }
 
@@ -365,4 +360,84 @@ form {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Para pantallas de notebook */
+@media (max-width: 1024px) {
+    body {
+        background-color: #e6e6e6; /* Cambio de color de fondo */
+    }
+
+    .carousel-item img {
+        width: 50%;
+    }
+
+    .imagen-texto img {
+        width: 50%;
+    }
+
+    .imagen-promos img {
+        margin-left: 300px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formulario {
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        background-color: #cccccc; /* Cambio de color de fondo para que se note la adaptacion del cambio de resolucion */
+    }
+
+    .carousel-item img {
+        width: 75%;
+    }
+
+    .imagen-texto {
+        flex-direction: column;
+    }
+
+    .imagen-texto img {
+        width: 75%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .imagen-promos img {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .grid-container-clients {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .clients {
+        width: 90%;
+        height: auto;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
 }
