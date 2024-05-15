@@ -126,6 +126,17 @@ h3 {
     margin-right:25px;
 }
 
+/*personalizo el carrusel de bt*/
+.carousel-item img {
+    width: 25%; 
+    height: auto; 
+}
+
+.carousel {
+    max-width: 25%; 
+    margin: auto; 
+}
+
 /* Estilos para las secciones de imagen y texto */
 .imagen-texto {
     display: flex;
