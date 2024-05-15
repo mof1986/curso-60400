@@ -1,7 +1,16 @@
+/*reset del CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
 /* Estilos para el encabezado */
 header {
-    background-color: #6B2737; 
-    color: #ffffff;
+    background-color: #e0a8b5; 
+    color: #303030;
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -12,12 +21,27 @@ header {
 
 /* Estilo para el resto del body */
 body {
-    background-color: #f8f4a6; 
+    background-color: #ffe3cacc; 
     color: #000000;
     padding-bottom: 80px;
 }
 
 /* Estilos para la barra de navegación */
+.fondo-claro {
+    color: #fff;
+    background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-main {
+    display: flexbox;
+    margin: auto auto;
+    height: auto;
+    width: 5%;
+  }
+
 nav {
     display: flex;
     justify-content: center;
@@ -41,7 +65,9 @@ nav ul li a {
     padding: 5px 10px;
     font-weight: normal;
 }
-
+.oculto{
+    display:none;
+}
 /* Estilo para los links cuando el mouse está sobre ellos */
 nav ul li a:hover {
     text-decoration: underline; 
@@ -49,7 +75,13 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Estilo para link seleccionado en menu de nav*/
+body > header > nav:nth-child(1) > div > h1 > span {
+    color:rgb(76, 76, 76);
+    font-weight: 900;
+    text-transform:uppercase ;
+    font-size:1.5rem;
+}
+
 
 .selectioned-link {
 font-weight: bold;
@@ -60,18 +92,22 @@ text-transform: uppercase;
 /* Estilos para los títulos (h#) */
 h1 {
     text-align: center;
-    color: #ffffff;
+    display: flexbox;
+    height: 15%;
+    width: 100%;
+    color: #010101;
 }
 
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#454DA5;
-    size: 3rem;
+    display:block;
+    color:#6b1206;
+    size: 20px;
     text-align: center;
 }
 
-h3{
-    color:#6B2737;
+h3 {
+    color:#573139;
     size:1rem;
 }
 
@@ -104,13 +140,32 @@ h3{
 }
 
 /* Estilo para imagenes de Nuestros clientes, aca deberia usar luego grid con mas detalles */
+
+.grid-container-clients {
+    display:flex;
+    padding: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    row-gap: 25px;
+    column-gap: 75px;
+
+    gap: 25px 75px;
+}
+
 .clients {
-    display: inline-block;
+    display: flex;
     width: 300px; 
     height: 300px; 
     border: 2px solid black; 
     margin: 10px; 
-    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    background-position: center;
 }
 
 /*Manipulo las imagenes respecto a la caja contenedora*/
@@ -127,7 +182,7 @@ h3{
 .img-nosotros {
     width: 200px; 
     height: 200px; 
-    display: inline-block; 
+    display: flex; 
     margin-right: 10px; 
 }
 
@@ -164,7 +219,7 @@ h3{
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #E08E45;
+    background-color: #dcc1aa;
     padding: 20px;
     display: flex;
     justify-content: space-between;
