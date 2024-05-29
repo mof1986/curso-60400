@@ -1,0 +1,77 @@
+/* Para pantallas de notebook */
+@media (max-width: 1024px) {
+    body {
+        background-color: #e6e6e6;
+    }
+
+    .carousel-item img {
+        width: 50%;
+    }
+
+    .imagen-texto img {
+        width: 50%;
+    }
+
+    .imagen-promos img {
+        margin-left: 300px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formulario {
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        background-color: #cccccc;
+    }
+
+    .carousel-item img {
+        width: 75%;
+    }
+
+    .imagen-texto {
+        flex-direction: column;
+
+        img {
+            width: 75%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    .imagen-promos img {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .grid-container-clients {
+        flex-direction: column;
+        height: auto;
+
+        .clients {
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}

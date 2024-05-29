@@ -1,0 +1,76 @@
+/* Estilos para el pie de página */
+footer {
+    background-color: #dcc1aa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 2px solid #34495e;
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        .grid-item-footer {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+    .left-section {
+        display: flex;
+        align-items: center;
+
+        .company-name {
+            margin-left: 10px;
+        }
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .company-ico {
+                width: 40px;
+            }
+
+            .icon {
+                margin-right: 10px;
+            }
+
+            .text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        span {
+            margin-bottom: 5px;
+        }
+
+        .social-icons {
+            img {
+                width: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
