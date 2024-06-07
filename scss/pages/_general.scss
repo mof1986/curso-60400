@@ -1,0 +1,54 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+
+/* Estilos Generales*/
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    header .titulo-pagina h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 1.5rem;
+        color: $color-texto;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 20%);
+        gap: 5px;
+        align-content: center;
+        margin: 0 20px;
+        justify-content: center;
+        align-items: flex;
+        height: 120vh;
+
+        .cliente-uno,
+        .cliente,
+        .cliente-final {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+main {
+    flex: 1;
+}

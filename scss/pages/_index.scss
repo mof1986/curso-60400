@@ -1,0 +1,118 @@
+// Estilos específicos de la página de inicio
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+/* Estilos del carrusel */
+.carousel-item {
+    img {
+        width: 80%;
+        height: 30vh;
+        object-fit: cover;
+    }
+}
+
+.carousel-caption {
+    h5 {
+        font-size: 2em;
+        font-weight: bold;
+        color: $color-en-imagen;
+    }
+}
+
+.carousel-caption {
+    p {
+        font-size: 1.5em;
+        color: $color-en-imagen;
+    }
+}
+.main-content {
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.productos,
+.aplicaciones,
+.elegir {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        color: #e5e5e5;
+        border-bottom: 2px solid #fca311;
+        padding-bottom: 10px;
+    }
+}
+
+
+header .titulo-pagina h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    color: $color-texto;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para imágenes de aplicaciones */
+.aplicaciones-grid {
+    display: grid;
+    gap: 20px;
+
+    .aplicacion-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aplicacion-img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Sección de porqué elegirnos */
+.elegir {
+    margin: 20px 0;
+}
+
+.elegir-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elegir-gif {
+    width: 60%;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.elegir-descripciones {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+
+    li {
+        margin-bottom: 10px;
+    }
+}

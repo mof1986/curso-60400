@@ -1,0 +1,31 @@
+// Estilos específicos de la página de clientes
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+
+body main .cliente-uno,
+.cliente,
+.cliente-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body main .cliente img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cliente h2 {
+    color: $highlight-color;
+    border-bottom: 2px solid $color-link;
+    padding-bottom: 10px;
+}
+
+.cliente p {
+    color: $color-texto;
+    font-size: $body-font-size;
+}
+

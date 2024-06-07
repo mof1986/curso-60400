@@ -1,0 +1,9 @@
+//mixin para formulario porque no se me ocurre otro uso en este momento (debido al diseño
+@mixin estilo-elemento-formulario {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

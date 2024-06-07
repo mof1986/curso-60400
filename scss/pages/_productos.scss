@@ -1,0 +1,38 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+/* Estilos para la sección de productos */
+.contenedor-productos {
+    display: block;
+    align-content: stretch;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-row: auto;
+
+    h3 {
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: $color-secundario;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

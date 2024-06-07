@@ -1,0 +1,109 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+// Estilos específicos de la página "Nosotros"
+/* Estilos para la sección Nuestra Historia */
+.imagen-nosotros {
+    width: 100vw;
+    height: 20vh;
+    margin: 20px auto;
+    display: block;
+}
+
+.historia {
+    text-align: center;
+    color: $color-texto;
+    padding: 20px;
+
+    h2 {
+        color: $color-primario;
+        border-bottom: 2px solid $color-primario;
+        padding-bottom: 10px;
+    }
+}
+
+/* Estilos para la sección Misión, Visión y Valores */
+.mision-vision-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $color-texto;
+    padding: 20px;
+}
+
+.mision,
+.vision,
+.valores {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+
+    h3 {
+        color: $color-primario;
+        /* Color naranja */
+    }
+}
+
+
+/* Estilos para la sección Nosotros */
+.main-nosotros {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: initial;
+    align-items: stretch;
+}
+
+.equipo {
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        color: $color-primario;
+        border-bottom: 2px solid;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        color: antiquewhite;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.columnas-equipo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.miembro-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+.equipo-detalle {
+    text-align: center;
+
+}

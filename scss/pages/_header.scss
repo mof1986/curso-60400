@@ -1,0 +1,57 @@
+// Estilos para el header
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+/* Estilos de header*/
+header {
+    margin: 0px 10px 5%;
+    display: flex;
+    /* Manejo en filas */
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px inset gray;
+
+    .container-logo-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        img {
+            max-width: 30%;
+            height: auto;
+        }
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 5px;
+
+        .navbar-brand {
+            color: grey;
+        }
+    }
+
+    .navbar-toggler-icon .navbar-nav,
+    .nav-link {
+        color: $color-texto;
+        /* Cambia el color del texto del menú de BT */
+    }
+
+    .navbar-nav .nav-link.active {
+        color: yellow;
+        /* Muestra el color de la página activa */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: $color-destacado;
+        /* Cambia el color cuando se pasa el cursor sobre el enlace */
+    }
+
+    .navbar-toggler {
+        border-color: $color-texto;
+        /* Cambia el color del icono del botón del toggler de BT*/
+    }
+}

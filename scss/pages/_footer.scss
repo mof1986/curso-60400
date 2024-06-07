@@ -1,0 +1,12 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/mq';
+
+/* Estilos de footer */
+footer {
+    text-align: center;
+    justify-content: center;
+    border-top: 1px inset gray;
+    margin-top: 2vh;
+    font-size: small;
+}

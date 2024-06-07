@@ -1,0 +1,93 @@
+/* Seccion de Media QUeries*/
+
+/*tablets o pantallas intermedias*/
+
+@media (min-width: 576px) {
+    .main-contacto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aplicaciones-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aplicacion-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .aplicacion-img {
+        max-width: 150px;
+        margin-right: 20px;
+    }
+
+    .elegir-content {
+        flex-direction: row;
+    }
+
+    .elegir-gif {
+        max-width: 50%;
+        max-height: none;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .elegir-descripciones {
+        width: 50%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    .ubicacion {
+        grid-column: span 2;
+    }
+
+    .aplicaciones-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .product img {
+        width: 343px;
+        height: 300px;
+    }
+
+    main.contenedor {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    .mision-vision-valores {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .elegir-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .elegir-gif {
+        max-height: 200px;
+        max-width: 300px;
+    }
+}
