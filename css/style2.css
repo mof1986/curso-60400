@@ -1,0 +1,543 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales*/
+body {
+    background-color: #0e0d0d;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Estilos de header*/
+header {
+    margin: 0px 10px 5%;
+    display: flex;
+    /*manejo en filas*/
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px inset gray;
+}
+
+header .container-logo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-brand {
+    color: grey;
+}
+
+header .container-logo-header img {
+    max-width: 30%;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+header .navbar-toggler-icon .navbar-nav,
+.nav-link {
+    color: whitesmoke;
+    /* Cambia el color del texto del menú de BT */
+}
+
+header .navbar-nav .nav-link.active {
+    color: yellow;
+    /*muestra el color de la pagina activa*/
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+    /* Cambia el color cuando se pasa el cursor sobre el enlace */
+}
+
+header .navbar-toggler {
+    border-color: whitesmoke;
+    /* Cambia el color del icono del botón del toggler de BT*/
+}
+
+main {
+    flex: 1;
+}
+
+body main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 20%);
+    gap: 5px;
+    align-content: center;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: flex;
+    height: 120vh;
+}
+
+.main-content {
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.productos,
+.aplicaciones,
+.elegir {
+    display: flex;
+    flex-direction: column;
+}
+
+.productos h2,
+.aplicaciones h2,
+.elegir h2 {
+    color: #e5e5e5;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 10px;
+}
+
+body header .titulo-pagina h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+body main .cliente-uno,
+.cliente,
+.cliente-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body main .cliente img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*estilos para nosotros*/
+/* Estilos para la sección Nuestra Historia */
+.imagen-nosotros {
+    width: 100vw;
+    height: 20vh;
+    margin: 20px auto;
+    display: block;
+}
+
+.historia {
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.historia h2 {
+    color: #fca311;
+    /* Color naranja */
+    border-bottom: 2px solid #fca311;
+    /* Línea naranja */
+    padding-bottom: 10px;
+}
+
+/* Estilos para la sección Misión, Visión y Valores */
+.mision-vision-valores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.mision,
+.vision,
+.valores {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+
+}
+
+.mision h3,
+.vision h3,
+.valores h3 {
+    color: #fca311;
+    /* Color naranja */
+}
+
+/* Estilos para la sección Nosotros */
+.main-nosotros {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: initial;
+    align-items: stretch;
+}
+
+.equipo {
+    padding: 20px;
+    text-align: center;
+}
+
+.columnas-equipo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.equipo h2 {
+    color: #fca311;
+    border-bottom: 2px solid;
+}
+
+.miembro-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.miembro-equipo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.equipo-detalle {
+    text-align: center;
+}
+
+.equipo h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+.equipo p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*estilos paga imagenes de aplicaciones*/
+.aplicaciones-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.aplicacion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.aplicacion-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+/*seccion de porqué elegirnos*/
+.elegir {
+    margin: 20px 0;
+}
+
+.elegir-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elegir-gif {
+    width: 60%;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.elegir-descripciones {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.elegir-descripciones li {
+    margin-bottom: 10px;
+}
+
+/*Estilos para la seccion de Contacto*/
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: repeat(2,30%);
+    gap:20px; */
+    height: 100vh;
+}
+
+.formulario-contacto {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.formulario-contacto h2 {
+    color: #fca311;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    height: 200%;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #0e0d0d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffbf69;
+}
+
+.datos-empresa {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.datos-empresa h2 {
+    color: #fca311;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 10px;
+}
+
+.ubicacion {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.ubicacion h2 {
+    color: #fca311;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 10px;
+}
+
+.ubicacion iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Estilos para la sección de productos */
+.contenedor-productos {
+    display: block;
+    align-content: stretch;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product {
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-row: auto;
+
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/*estilos de footer*/
+footer {
+    text-align: center;
+    justify-content: center;
+    border-top: 1px inset gray;
+    margin-top: 2vh;
+    font-size: small;
+}
+
+/* Estilos del carrusel */
+.carousel-item img {
+    width: 80%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(106, 18, 18);
+}
+
+.carousel-caption p {
+    font-size: 1.5em;
+    color: rgb(106, 18, 18);
+}
+
+/* Seccion de Media QUeries*/
+
+/*tablets o pantallas intermedias*/
+
+@media (min-width: 576px) {
+    .main-contacto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aplicaciones-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aplicacion-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .aplicacion-img {
+        max-width: 150px;
+        margin-right: 20px;
+    }
+
+    .elegir-content {
+        flex-direction: row;
+    }
+
+    .elegir-gif {
+        max-width: 50%;
+        max-height: none;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .elegir-descripciones {
+        width: 50%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    .ubicacion {
+        grid-column: span 2;
+    }
+
+    .aplicaciones-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .product img {
+        width: 343px;
+        height: 300px;
+    }
+
+    main.contenedor {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    .mision-vision-valores {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .elegir-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .elegir-gif {
+        max-height: 200px;
+        max-width: 300px;
+    }
+}
