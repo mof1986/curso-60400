@@ -512,7 +512,7 @@ footer {
 }
 /* Estilos para la sección Nuestra Historia */
 .imagen-nosotros {
-  width: 100vw;
+  width: 100vw; 
   height: 20vh;
   margin: 20px auto;
   display: block;
@@ -549,7 +549,6 @@ footer {
 .vision h3,
 .valores h3 {
   color: #fca311;
-  /* Color naranja */
 }
 
 /* Estilos para la sección Nosotros */
@@ -839,12 +838,12 @@ button[type=submit]:hover {
 .carousel-caption h5 {
   font-size: 2em;
   font-weight: bold;
-  color: rgb(248, 116, 0);
+  color: rgb(0, 0, 0);
 }
 
 .carousel-caption p {
   font-size: 1.5em;
-  color: rgb(248, 116, 0);
+  color: rgb(78, 78, 78);
 }
 
 .main-content {
