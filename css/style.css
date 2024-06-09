@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,73 +13,90 @@
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos Generales*/
 body {
   background-color: #0e0d0d;
@@ -91,6 +109,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 body header .titulo-pagina h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 1.5rem;
@@ -98,6 +117,7 @@ body header .titulo-pagina h1 {
   font-weight: bold;
   text-align: center;
 }
+
 body main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -109,6 +129,7 @@ body main {
   align-items: flex;
   height: 120vh;
 }
+
 body main .cliente-uno,
 body main .cliente,
 body main .cliente-final {
@@ -117,6 +138,7 @@ body main .cliente-final {
   align-items: center;
   height: 100%;
 }
+
 body main .cliente-uno img,
 body main .cliente img,
 body main .cliente-final img {
@@ -135,73 +157,90 @@ main {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos de header*/
 header {
   margin: 0px 10px 5%;
@@ -211,37 +250,47 @@ header {
   justify-content: space-between;
   border-bottom: 1px inset gray;
 }
+
 header .container-logo-header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+
 header .container-logo-header img {
   max-width: 30%;
   height: auto;
 }
+
 header nav ul {
   list-style: none;
   display: flex;
   gap: 5px;
 }
+
 header nav ul .navbar-brand {
-  color: grey;
+  color: rgb(162, 159, 159);
+}
+.navbar-brand:first-child {
+  color: #545252; /* Cambiar color del texto a rojo */
 }
 header .navbar-toggler-icon .navbar-nav,
 header .nav-link {
   color: whitesmoke;
   /* Cambia el color del texto del menú de BT */
 }
+
 header .navbar-nav .nav-link.active {
   color: yellow;
   /* Muestra el color de la página activa */
 }
+
 header .navbar-nav .nav-link:hover {
   color: #ff0000;
   /* Cambia el color cuando se pasa el cursor sobre el enlace */
 }
+
 header .navbar-toggler {
   border-color: whitesmoke;
   /* Cambia el color del icono del botón del toggler de BT*/
@@ -254,73 +303,90 @@ header .navbar-toggler {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos de footer */
 footer {
   text-align: center;
@@ -337,73 +403,90 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos para la sección de productos */
 .contenedor-productos {
   display: block;
@@ -423,14 +506,17 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   grid-row: auto;
 }
+
 .product h3 {
   margin-top: 10px;
 }
+
 .product p {
   margin-top: 5px;
   font-size: 14px;
   color: #666;
 }
+
 .product img {
   max-width: 100%;
   height: auto;
@@ -443,76 +529,93 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos para la sección Nuestra Historia */
 .imagen-nosotros {
-  width: 100vw; 
+  width: 100vw;
   height: 20vh;
   margin: 20px auto;
   display: block;
@@ -523,6 +626,7 @@ footer {
   color: whitesmoke;
   padding: 20px;
 }
+
 .historia h2 {
   color: #fca311;
   border-bottom: 2px solid #fca311;
@@ -545,6 +649,7 @@ footer {
   text-align: center;
   flex-direction: row;
 }
+
 .mision h3,
 .vision h3,
 .valores h3 {
@@ -564,15 +669,18 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
 .equipo h2 {
   color: #fca311;
   border-bottom: 2px solid;
 }
+
 .equipo h3 {
   font-size: 1.5em;
   margin-bottom: 5px;
   color: antiquewhite;
 }
+
 .equipo p {
   font-size: 1em;
   line-height: 1.5;
@@ -597,6 +705,7 @@ footer {
   max-width: 300px;
   margin: 10px;
 }
+
 .miembro-equipo img {
   width: 100%;
   height: auto;
@@ -615,73 +724,90 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos para la sección de Contacto */
 .main-contacto {
   display: flex;
@@ -693,18 +819,22 @@ footer {
   margin: 20px auto;
   max-width: 600px;
 }
+
 .formulario-contacto h2 {
   color: #fca311;
   border-bottom: 2px solid #fca311;
   padding-bottom: 10px;
 }
+
 .formulario-contacto .form-group {
   margin-bottom: 20px;
 }
+
 .formulario-contacto .form-group label {
   font-weight: bold;
   display: block;
 }
+
 .formulario-contacto .form-group input,
 .formulario-contacto .form-group textarea {
   width: 100%;
@@ -725,6 +855,7 @@ button[type=submit] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 button[type=submit]:hover {
   background-color: #d78703;
 }
@@ -733,6 +864,7 @@ button[type=submit]:hover {
   margin: 20px auto;
   max-width: 600px;
 }
+
 .datos-empresa h2 {
   color: #fca311;
   border-bottom: 2px solid #fca311;
@@ -743,11 +875,13 @@ button[type=submit]:hover {
   margin: 20px auto;
   max-width: 600px;
 }
+
 .ubicacion h2 {
   color: #fca311;
   border-bottom: 2px solid #fca311;
   padding-bottom: 10px;
 }
+
 .ubicacion iframe {
   width: 100%;
   height: 450px;
@@ -761,73 +895,90 @@ button[type=submit]:hover {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
   }
 }
+
 /* Estilos del carrusel */
 .carousel-item img {
   width: 80%;
@@ -866,6 +1017,7 @@ button[type=submit]:hover {
   display: flex;
   flex-direction: column;
 }
+
 .productos h2,
 .aplicaciones h2,
 .elegir h2 {
@@ -892,12 +1044,14 @@ ul {
   display: grid;
   gap: 20px;
 }
+
 .aplicaciones-grid .aplicacion-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
 .aplicaciones-grid .aplicacion-img {
   width: 100%;
   height: auto;
@@ -929,6 +1083,7 @@ ul {
   width: 100%;
   text-align: left;
 }
+
 .elegir-descripciones li {
   margin-bottom: 10px;
 }
@@ -940,68 +1095,84 @@ ul {
     display: flex;
     flex-direction: row;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .aplicacion-item {
     flex-direction: row;
     text-align: left;
   }
+
   .aplicacion-img {
     max-width: 150px;
     margin-right: 20px;
   }
+
   .elegir-content {
     flex-direction: row;
   }
+
   .elegir-gif {
     max-width: 50%;
     max-height: none;
     margin-bottom: 0;
     margin-right: 20px;
   }
+
   .elegir-descripciones {
     width: 50%;
   }
+
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
+
   .product img {
     max-width: 100%;
     height: auto;
   }
 }
+
 @media (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 65% 35%;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
+
   .aplicaciones-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   .product img {
     width: 343px;
     height: 300px;
   }
+
   main.contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
   }
+
   .mision-vision-valores {
     display: flex;
     flex-direction: row;
   }
+
   .elegir-content {
     flex-direction: row;
     align-items: flex-start;
   }
+
   .elegir-gif {
     max-height: 200px;
     max-width: 300px;
