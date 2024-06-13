@@ -111,11 +111,13 @@ body {
 }
 
 body header .titulo-pagina h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
   color: whitesmoke;
   font-weight: bold;
   text-align: center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fca311;
 }
 
 body main {
@@ -256,11 +258,13 @@ header .container-logo-header {
   justify-content: center;
   align-items: center;
   height: 100%;
+
 }
 
 header .container-logo-header img {
   max-width: 30%;
   height: auto;
+
 }
 
 header nav ul {
@@ -1043,7 +1047,7 @@ button[type=submit]:hover {
 }
 
 header .titulo-pagina h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
   color: whitesmoke;
   font-weight: bold;
