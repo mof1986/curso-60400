@@ -892,6 +892,9 @@ button[type=submit]:hover {
   background-color: #d78703;
 }
 
+.boton-derecha {
+  text-align: right;
+}
 .datos-empresa {
   margin: 20px auto;
   max-width: 600px;
