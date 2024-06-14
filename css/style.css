@@ -276,9 +276,12 @@ header nav ul {
 header nav ul .navbar-brand {
   color: rgb(162, 159, 159);
 }
+
 .navbar-brand:first-child {
-  color: #545252; /* Cambiar color del texto a rojo */
+  color: #545252;
+  /* Cambiar color del texto a rojo */
 }
+
 header .navbar-toggler-icon .navbar-nav,
 header .nav-link {
   color: whitesmoke;
@@ -527,8 +530,8 @@ footer {
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
+  width: 257px;
+  height: 225px;
 }
 
 /* Seccion de Media QUeries*/
@@ -650,16 +653,20 @@ footer {
   color: whitesmoke;
   padding: 20px;
 }
-.mision-vision-valores  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-  }
-.mision-vision-valores  p {
-    max-width: 600px;
-    text-align: center;
-  };
+.mision-vision-valores div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.mision-vision-valores p {
+  max-width: 600px;
+  text-align: center;
+}
+
+;
 
 
 .mision,
@@ -674,6 +681,11 @@ footer {
 .vision h3,
 .valores h3 {
   color: #fca311;
+}
+
+/*no mostramos whatsapp salvo en pantallas grandes*/
+.flotwapp {
+  display:none; 
 }
 
 /* Estilos para la sección Nosotros */
@@ -737,7 +749,7 @@ footer {
   text-align: center;
 }
 
-/* Seccion de Media QUeries*/
+/* Seccion de Media Queries*/
 /*tablets o pantallas intermedias*/
 @media (min-width: 576px) {
   .main-contacto {
@@ -952,8 +964,8 @@ button[type=submit]:hover {
   }
 
   .product img {
-    max-width: 100%;
-    height: auto;
+    width: 257px;
+    height: 225px;
   }
 }
 
@@ -1025,6 +1037,7 @@ button[type=submit]:hover {
   flex-direction: column;
   gap: 20px;
 }
+
 
 .intro p {
   font-size: 1.2em;
@@ -1152,8 +1165,8 @@ ul {
   }
 
   .product img {
-    max-width: 100%;
-    height: auto;
+    width: 257px;
+    height: 225px;
   }
 }
 
@@ -1165,6 +1178,23 @@ ul {
 
   .ubicacion {
     grid-column: span 2;
+  }
+
+  /*boton whatsapp flotante*/
+  .flotwapp {
+    display:flex;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    font-size: 40px;
+    z-index: 100;
+  }
+
+  .flotwapp:hover {
+    opacity: 0.7;
   }
 
   .aplicaciones-grid {
