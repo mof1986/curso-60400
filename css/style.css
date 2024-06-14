@@ -362,7 +362,9 @@ header .navbar-toggler {
     display: grid;
     grid-template-columns: 65% 35%;
   }
-
+  .oculto-navbar{
+    display:none;
+  }
   .ubicacion {
     grid-column: span 2;
   }
