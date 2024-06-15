@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+/* * img {
+filter: grayscale();
+} */
+/*llevar todas las imagenes del proyecto a escala de colores particular*/
 /* Seccion de Media QUeries*/
 /*tablets o pantallas intermedias*/
 @media (min-width: 576px) {
@@ -112,7 +116,7 @@ body {
 
 body header .titulo-pagina h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: whitesmoke;
   font-weight: bold;
   text-align: center;
@@ -278,8 +282,8 @@ header nav ul .navbar-brand {
 }
 
 .navbar-brand:first-child {
-  color: #545252;
-  /* Cambiar color del texto a rojo */
+  color: rgb(162, 159, 159);
+  /*Color de palabra Menu para pantallas chicas */
 }
 
 header .navbar-toggler-icon .navbar-nav,
@@ -362,9 +366,11 @@ header .navbar-toggler {
     display: grid;
     grid-template-columns: 65% 35%;
   }
-  .oculto-navbar{
-    display:none;
+
+  .oculto-navbar {
+    display: none;
   }
+
   .ubicacion {
     grid-column: span 2;
   }
@@ -528,7 +534,7 @@ footer {
 .product p {
   margin-top: 5px;
   font-size: 14px;
-  color: #666;
+  color: whitesmoke;
 }
 
 .product img {
@@ -633,6 +639,7 @@ footer {
   height: 20vh;
   margin: 20px auto;
   display: block;
+  filter: sepia();
 }
 
 .historia {
@@ -687,7 +694,7 @@ footer {
 
 /*no mostramos whatsapp salvo en pantallas grandes*/
 .flotwapp {
-  display:none; 
+  display: none;
 }
 
 /* Estilos para la sección Nosotros */
@@ -897,6 +904,7 @@ button[type=submit]:hover {
 .boton-derecha {
   text-align: right;
 }
+
 .datos-empresa {
   margin: 20px auto;
   max-width: 600px;
@@ -1017,21 +1025,43 @@ button[type=submit]:hover {
 }
 
 /* Estilos del carrusel */
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  /* Centra el contenido horizontalmente */
+}
+
 .carousel-item img {
   width: 80%;
   height: 30vh;
   object-fit: cover;
+  filter: grayscale();
 }
 
 .carousel-caption h5 {
+  text-transform: uppercase;
+  display: block;
   font-size: 2em;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: #000000;
+  background-color: rgba(232, 232, 232, 0.5);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: whitesmoke;
+  padding: 10px;
+  margin: 0;
 }
 
 .carousel-caption p {
   font-size: 1.5em;
-  color: rgb(78, 78, 78);
+  color: black;
+  background-color: rgba(232, 232, 232, 0.5);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: whitesmoke;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .main-content {
@@ -1064,13 +1094,6 @@ button[type=submit]:hover {
   padding-bottom: 10px;
 }
 
-header .titulo-pagina h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5rem;
-  color: whitesmoke;
-  font-weight: bold;
-  text-align: center;
-}
 
 ul {
   list-style: none;
@@ -1091,9 +1114,9 @@ ul {
 }
 
 .aplicaciones-grid .aplicacion-img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
+  width: 320px;
+  height: 250px;
+  max-width: 350px;
   margin-bottom: 10px;
 }
 
@@ -1106,18 +1129,20 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px 10px 2px 5px;
+  padding: 2%;
 }
 
 .elegir-gif {
   width: 60%;
   max-height: 200px;
   margin-bottom: 20px;
+  padding: 2%;
 }
 
 .elegir-descripciones {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin-left: 2%;
   width: 100%;
   text-align: left;
 }
@@ -1187,7 +1212,7 @@ ul {
 
   /*boton whatsapp flotante*/
   .flotwapp {
-    display:flex;
+    display: flex;
     position: fixed;
     width: 80px;
     height: 80px;
